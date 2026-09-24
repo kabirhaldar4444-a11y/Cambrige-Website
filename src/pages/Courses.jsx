@@ -120,12 +120,6 @@ const CourseCard = ({
           <span className="meta-pill meta-rating">
             <FaStar className="star-icon" size={11} /> 4.9
           </span>
-          <span className="meta-pill meta-mode">
-            <FaClock size={11} /> {course.duration || "30 to 45 Days"}
-          </span>
-          <span className="meta-pill meta-cert">
-            <FaCertificate size={11} /> Official Cert
-          </span>
         </div>
 
         {/* Course Title */}
@@ -182,7 +176,7 @@ const CourseCard = ({
 };
 
 const Courses = () => {
-  const [activeTab, setActiveTab] = useState('popular'); // 'popular', 'all-catalog', 'saved', or category name
+  const [activeTab, setActiveTab] = useState('all-catalog'); // 'all-catalog', 'popular', 'saved', or category name
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('featured');
   const [expandedCards, setExpandedCards] = useState({});
@@ -439,16 +433,16 @@ const Courses = () => {
         {!searchQuery && (
           <div className="category-tabs flex justify-center flex-wrap gap-xs my-lg">
             <button 
-              className={`cat-tab-btn flex align-center gap-xs ${activeTab === 'popular' ? 'active' : ''}`}
-              onClick={() => setActiveTab('popular')}
-            >
-              <FaGraduationCap /> Popular Programs ({popularPrograms.length})
-            </button>
-            <button 
               className={`cat-tab-btn flex align-center gap-xs ${activeTab === 'all-catalog' ? 'active' : ''}`}
               onClick={() => setActiveTab('all-catalog')}
             >
               <FaGlobeAmericas /> All Categories ({allCourses.length})
+            </button>
+            <button 
+              className={`cat-tab-btn flex align-center gap-xs ${activeTab === 'popular' ? 'active' : ''}`}
+              onClick={() => setActiveTab('popular')}
+            >
+              <FaGraduationCap /> Popular Programs ({popularPrograms.length})
             </button>
             
             {professionalCatalog.map((cat, idx) => (
