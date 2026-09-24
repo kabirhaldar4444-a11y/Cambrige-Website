@@ -100,6 +100,10 @@ const App = () => {
               element={<CourseDetail courseId="confidenceandcharismatraining" />} 
             />
             <Route 
+              path="/aiproductivitypowerup" 
+              element={<CourseDetail courseId="aiproductivitypowerup" />} 
+            />
+            <Route 
               path="/executivepresenceandleadership" 
               element={<CourseDetail courseId="executivepresenceandleadership" />} 
             />

@@ -137,7 +137,7 @@ export const popularPrograms = [
   {
     id: "personalbrandingstrategisttraining",
     title: "Personal Branding Strategist Training",
-    price: "INR 65,000",
+    price: "INR 1,00,000",
     path: "/personalbrandingstrategisttraining"
   },
   {
@@ -6629,7 +6629,7 @@ export const courseDetailMap = {
   "personalbrandingstrategisttraining": {
     title: "Personal Branding Strategist Training",
     subtitle: "Build a highly visible professional identity in your industry",
-    price: "₹65,000/-",
+    price: "₹1,00,000/-",
     duration: "30 to 45 Days",
     terms: "Study materials shared via email after registration and fee payment.",
     learningAreas: [
@@ -6960,6 +6960,54 @@ export const courseDetailMap = {
       "Build a powerful professional network through authentic, memorable connections",
       "Command higher fees, salaries, and recognition as a charismatic professional",
       "Earn a premium Cambridge Learning Services certification that validates your interpersonal excellence"
+    ]
+  },
+  "aiproductivitypowerup": {
+    title: "AI Productivity Power-Up",
+    subtitle: "Amplify work output and accelerate daily workflows with cutting-edge AI tools",
+    price: "₹60,000/-",
+    duration: "20 to 35 Days",
+    terms: "Study materials shared via email after registration and fee payment.",
+    learningAreas: [
+      "AI-assisted document drafting, summarization, and content automation",
+      "Data analysis and visual dashboard creation using intelligent assistants",
+      "Workflow automation across email, calendar, and project management applications",
+      "Advanced prompt engineering frameworks for enterprise execution",
+      "Ethical governance, data confidentiality, and risk mitigation in AI usage"
+    ],
+    paragraphs: [
+      "AI Productivity Power-Up is an intensive masterclass designed to turn standard corporate workflows into high-speed, automated processes using contemporary artificial intelligence tools.",
+      "Learn how top professionals leverage AI copilots, generative prompt models, and no-code connectors to shave hours off routine analysis, report writing, and strategic communication.",
+      "Structured as a flexible, 100% self-paced certification track, this program provides downloadable templates, step-by-step video lessons, and official credentialing upon completion."
+    ],
+    objectives: [
+      "Master enterprise prompt engineering to extract high-precision outputs from modern AI platforms",
+      "Automate repetitive administrative, analytical, and communication workflows",
+      "Leverage AI to synthesize massive research papers and complex datasets in minutes",
+      "Ensure compliance with enterprise data privacy and security best practices",
+      "Implement immediate productivity frameworks that save 10+ hours per week"
+    ],
+    keyTopics: [
+      "Enterprise AI Prompt Engineering", "Workflow Automation & Integrations", "Data Synthesis & Visualization",
+      "Executive Reporting with AI", "Email & Calendar Productivity Systems", "AI Ethics & Data Privacy",
+      "No-Code AI Automation", "Collaborative AI Tools", "Future of AI-Powered Work"
+    ],
+    targetAudience: [
+      "Managers, analysts, and knowledge workers seeking an exponential boost in productivity",
+      "Consultants and advisors producing heavy research, reports, and slide decks",
+      "Entrepreneurs and small business owners looking to scale operations leanly",
+      "Professionals preparing for modern, AI-integrated leadership roles"
+    ],
+    prerequisites: [
+      "Basic familiarity with web browsers and standard office applications",
+      "No coding or programming background required",
+      "English proficiency for study and exam comprehension"
+    ],
+    careerBenefits: [
+      "Dramatically accelerate your day-to-day productivity and output quality",
+      "Position yourself as an indispensable AI champion in your organization",
+      "Gain competitive advantage in high-demand analytical and management roles",
+      "Earn an official Cambridge Learning Services digital certification"
     ]
   }
 };

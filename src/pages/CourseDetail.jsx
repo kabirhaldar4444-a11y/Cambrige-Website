@@ -528,13 +528,9 @@ const CourseDetail = ({ courseId: propCourseId }) => {
   }
 
   const getCoursePath = (id) => {
-    const popularIds = [
-      "self-confidencebuildingtraining", "resiliencecoachtraining", "motivationalspeakertraining",
-      "bodylanguageexperttraining", "personalbrandingstrategisttraining", "mindsetmasterytraining",
-      "relationshipcoachingtraining", "decisionmakingmasterytraining", "adaptiveleadershiptraining",
-      "theeverydayaitoolkit", "confidenceandcharismatraining", "executivepresenceandleadership"
-    ];
-    return popularIds.includes(id) ? `/${id}` : `/course/${id}`;
+    const popular = popularPrograms.find(p => p.id === id);
+    if (popular && popular.path) return popular.path;
+    return `/course/${id}`;
   };
 
   const prevPath = getCoursePath(prevCourseId);
